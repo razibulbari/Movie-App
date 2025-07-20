@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App 2.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="acc-bar">
+        <p>This Web App Is Currently In BETA!</p>
+    </div>
+
+
+    <div class="navbar">
+        <div class="nav-logo">
+            <p>Movie App 2.0</p>
+        </div>
+        <div class="link-img">
+            <img src="Info Squared.png" alt="">
+            <img src="Home Page.png" alt="">
+            <img src="TV.png" alt="">
+        </div>
+        <div class="nav-git">
+            <img src="GitHub.png" alt="">
+        </div>
+    </div>
+    <div class="input-contain">
+        <div class="input">
+            <input id="nameMovie" type="text" placeholder="Search for a movie or TV show...">
+            <div class="search-icon"><img onclick="fetchData()" src="Search.png" alt=""></div>
+        </div>
+    </div>
+    <div class="movie">
+        <div class="movie-wrapper">
+            <div class="movie-img">
+                <img id="poster" src="New Project.jpg" alt="">
+            </div>
+            <div class="movie-details">
+                <div class="movie-name">
+                    <p id="MovieName">Movie Name</p>
+                </div>
+                <div class="m-details">
+                    <p>Rating: <span id="rating"></span></p>
+                    <p>Year: <span id="year"></span></p>
+                    <p>Genre: <span id="genre"></span></p>
+                    <p>Director: <span id="director"></span></p>
+                    <p>Runtime: <span id="runtime"></span></p>
+                    <p>Type: <span id="type"></span></p>
+                    <p>IMDB Rating: <span id="imrating"></span></p>
+                    <p>Writer: <span id="writer"></span></p>
+                    <p>Language: <span id="lang"></span></p>
+                </div>
+                <div class="plot-contain">
+                    <div class="plt-head">
+                        <p>Plot/Summery</p>
+                    </div>
+                    <div class="summery-text">
+                        <span id="summery">Example Text</span>
+                    </div>
+                    <div class="sbtn">
+                        <a href="">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
